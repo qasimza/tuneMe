@@ -1,0 +1,100 @@
+{% extends "layouts/base-fullscreen.html" %}
+
+{% block title %} Search Results {% endblock %} 
+
+<!-- Specific Page CSS goes HERE  -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}
+
+<div class="content">
+    <div class="container">
+        <div class="row pt-5 justify-content-center">
+        <div class="col-md-12">
+            <div class="card ">
+            <div class="card-header text-center py-4">
+                <h4 class="title"> Here are your search results!</h4>
+            </div>
+            <div class="card-body">
+                <div class="table-responsive">
+                <table class="table tablesorter " id="">
+                    <thead class=" text-primary">
+                    <tr>
+                        <th>
+                        Song Title
+                        </th>
+                        <th>
+                        Artist
+                        </th>
+                        <th>
+                        Genres
+                        </th>
+                        <th>
+                        Themes
+                        </th>
+                        <th class="text-center">
+                        Year
+                        </th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+                        Planets of the Universe
+                        </td>
+                        <td>
+                        Stevie Nicks
+                        </td>
+                        <td>
+                        Rock, Dance
+                        </td>
+                        <td>
+                        Breakup  
+                        </td>
+                        <td class="text-center">
+                            2001
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                        No Tears Left to Cry
+                        </td>
+                        <td>
+                        Ariana Grande
+                        </td>
+                        <td>
+                        R&B, Soul, Pop
+                        </td>
+                        <td>
+                        Moving-On, Self-Care   
+                        </td>
+                        <td class="text-center">
+                            2008
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                </div>
+            </div>
+            <div class="card-footer text-center">
+                <button type="button" class="btn btn-fill btn-primary">Export Playlist to Spotify</button>
+                <button type="button" class="btn btn-fill btn-primary">Modify Search</button>
+                <button type="button" class="btn btn-fill btn-primary">New Search</button>
+                <br /><br />
+                
+            </div>
+            </div>
+        </div>
+
+
+
+        
+        </div>
+    </div>
+  </div>
+
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}
